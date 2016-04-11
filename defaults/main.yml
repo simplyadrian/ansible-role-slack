@@ -2,10 +2,7 @@
 # defaults file for ansible-role-slack
 slack_token: ""
 slack_message: ""
-slack_title: ""
-slack_description: ""
-slack_status_color: "" #ex. good
-slack_notification_fields: {}
+slack_attachments: {}
 slack_username: ""
 slack_channel: ""
 slack_icon_emoji: ":bot:"
