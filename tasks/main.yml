@@ -1,0 +1,11 @@
+---
+# tasks file for ansible-role-slack
+- name: Send notification to Slack
+  slack:
+    token: "{{ slack_token }}"
+    msg: "{{ slack_message }}"
+    attachments: "{{ slack_attachments }}"
+    username: "{{ slack_username }}"
+    channel: "{{ slack_channel }}"
+    icon_emoji: "{{ slack_icon_emoji }}"
+  when: slack_token is defined

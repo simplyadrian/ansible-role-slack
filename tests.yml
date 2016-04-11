@@ -1,0 +1,21 @@
+---
+- hosts: test
+  vars:
+    slack_token: "T0JNWE1TL/B0T8AL1KM/urbGLKJ7Vqo1vzi2jhB4O9pO"
+    slack_message: "slack tests launched"
+    slack_attachments:
+      - title: "Instance info"
+        text: "test_123"
+        color: good
+        fields:
+          - title: "Instance Name"
+            value: "test_456"
+            short: "true"
+          - title: "AMI Id"
+            value: "test_789"
+            short: "true"
+    slack_username: "awsbot"
+    slack_channel: "aws"
+    slack_icon_emoji: ":bot:"
+  roles:
+    - ./
